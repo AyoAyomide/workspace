@@ -1,0 +1,112 @@
+/*window.addEventListener("load", eg_load);
+function eg_load() {
+    var show = document.getElementById("show");
+    var s_t_PLAY = document.getElementById("s_tPLY"),
+        ply_BU = document.getElementById("ply_bu"),
+        t_line = document.getElementById("t_line"),
+        buf_l = document.getElementById("buf_l"),
+        ply_l = document.getElementById("ply_l"),
+        cu_p = document.getElementById("cu_p"),
+        vup_vdw = document.getElementById("vup_vdw"),
+        v_mbdy = document.getElementById("v-mbdy"),
+        vBD = document.getElementById("vBD"),
+        vbg_len = document.getElementById("vbg_len"),
+        v_OP = document.getElementById("vlu_Op"),
+        m_PP = document.getElementById("m-PP");
+
+    function ch_aud() {
+        var aud_fl = document.createElement("audio"),
+            aud_sp_ogg = aud_sp = aud_fl.canPlayType('audio/ogg; codecs="vorbis"'),
+            aud_sp_mp4 = aud_sp = aud_fl.canPlayType('audio/mp4; codecs="mp4a.40.5"');
+        if (aud_sp_ogg != "" || aud_sp_mp4 != "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    s_t_PLAY.addEventListener("loadstart", function () {
+        var buff_LN = document.getElementById("buff_LN"),
+            aud_LN = document.getElementById("aud_LN");
+        buff_LN.innerHTML = s_t_PLAY.currentTime;
+        aud_LN.innerHTML = parseInt(s_t_PLAY.duration / 60) + ":" + parseInt(s_t_PLAY.duration % 60);
+        ply_BU.innerHTML = "<div class='au_roll'></div>";
+    });
+
+    s_t_PLAY.ontimeupdate = function () {
+        var buff_LN = document.getElementById("buff_LN"),
+            aud_LN = document.getElementById("aud_LN");
+        buff_LN.innerHTML = parseInt(s_t_PLAY.currentTime / 60) + ":" + parseInt(s_t_PLAY.currentTime % 60);
+        aud_LN.innerHTML = parseInt(s_t_PLAY.duration / 60) + ":" + parseInt(s_t_PLAY.duration % 60);
+        mp3DAT();
+    }
+    ply_BU.onclick = function () {
+        if (ply_BU.classList == "ic_hf2 ply") {
+            s_t_PLAY.play();
+            ply_BU.setAttribute("class", "ic_hf2 pus");
+            
+        } else {
+            s_t_PLAY.pause();
+            ply_BU.setAttribute("class", "ic_hf2 ply");
+        }
+    }
+
+    function movePS(event) {
+        s_lnt = event.pageX - t_line.offsetLeft;
+        clinperc = Math.min(10 / t_line.clientWidth * s_lnt * 10, 100);
+        derce = s_t_PLAY.duration * ((event.pageX - t_line.getBoundingClientRect().left) / t_line.clientWidth);
+        s_t_PLAY.currentTime = derce;
+    }
+
+    function mp3DAT() {
+        percent = Math.min((10 / s_t_PLAY.duration) * s_t_PLAY.currentTime * 10, 100);
+        aud_lded = Math.min((10 / s_t_PLAY.buffered.end(0)) * s_t_PLAY.duration * 10, 100);
+        ply_l.style.width = percent + "%";
+        buf_l.style.width = aud_lded + "%";
+        cu_p.style.left = percent + "%";
+    }
+
+    function moveMP2() {
+        t_line.addEventListener("mousemove", movePS);
+    }
+
+    function stoMV() {
+        t_line.removeEventListener("mousemove", movePS);
+    }
+
+    function tell(event) {
+        vlen = event.pageY - vBD.getBoundingClientRect().top;
+        if (vlen >= 0) {
+            vperc = Math.min(10 / vBD.clientHeight * vlen * 10, 100) - 100;
+            vperc = Math.abs(vperc);
+            vup_vdw.style.bottom = vperc + "%";
+            vbg_len.style.height = vperc + "%";
+            vlum = (vperc / 100);
+            s_t_PLAY.volume = vlum;
+            vlum == 0 ? v_OP.setAttribute("class", "ic_hf vlud") : v_OP.setAttribute("class", "ic_hf vlup");
+        }
+    }
+    t_line.addEventListener("mouseup",movePS);
+    cu_p.addEventListener("mousedown", function () {
+        window.addEventListener("mousemove", movePS);
+    });
+    window.addEventListener("mouseup", function () {
+        window.removeEventListener("mousemove", movePS);
+    });
+    v_OP.onclick = function () {
+        if (v_mbdy.style.display == "none") {
+
+            vup_vdw.addEventListener("mousedown", function () {
+                window.addEventListener("mousemove", tell);
+            });
+            vBD.addEventListener("click", tell);
+            window.addEventListener("mouseup", function () {
+                window.removeEventListener("mousemove", tell);
+            });
+            v_mbdy.style.display = "inline-block";
+        } else {
+            v_mbdy.style.display = "none";
+        }
+
+    }
+}*/

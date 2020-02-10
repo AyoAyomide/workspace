@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/root/root.css" />
+    <link rel="stylesheet" type="text/css" href="css/style/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style/popbox.css">
+    <link rel="stylesheet" type="text/css" href="css/style/sty_ply.css">
+    <link rel="stylesheet" type="text/css" href="css/style/sty_hf.css">
+    <link rel="stylesheet" type="text/css" href="css/style/sty_spsn.css">
+    <link rel="stylesheet" type="text/css" href="css/root/ani_media.css">
+    <script src="js/root/index.js"></script>
+    <script src="js/seng/eng_1.js"></script>
+    <script src="js/root/usin.js"></script>
+</head>
+
+<body id="body">
+    <div class="p-hd">
+        <div class="op">
+            <button class="ic_hf" id="opLeftPg" onclick="open_cl(this,'LeftPg');"></button>
+        </div>
+        <div class="logo">
+            <h1>[ GBE-DU ]</h1>
+        </div>
+        <div class="fd">
+            <button class="ic_hf" id="opSrc" onclick="open_cl(this,'Src');"></button>
+            <!--<button class="ic_hf sdp" id="opPF" onclick="open_cl(this,'pf_drpDW');" name="sdp"></button>-->
+            <button class="udp" id="opPF2" onclick="open_cl(this,'pf_drpDW');" name="udp" style="background-image: url(files/mpCV/5.jpg);background-position: center;"></button>
+        </div>
+    </div>
+    <div class="p-bd sg-mdn">
+        <div class="bd">
+            <div id="pf_drpDW" class="pf_drpDW" style="display: none;">
+                <form id="pf-form" class="p-top">
+                    <div class="up-pck ic_hf"><button></button><input id="pf-file" type="file"></div><img id="pf-photo" src="files/mpCV/1.jpg">
+                    <h3 id="pf-file-err"></h3>
+                    <div class="pt-mid pt-mid-act"><input id="pf-input" type="text" maxlength="21" disabled="" value="AyoAyomide">
+                        <p>samuel abel</p>
+                        <div class="fo" id="edit-save">
+                            <div class="ic_hf fedt" onclick="editPF();">edit</div>
+                        </div>
+                    </div>
+                    <div class="lding">
+                        <p>please wait...</p>
+                    </div>
+                </form>
+                <div class="p-bom">
+                    <div>
+                        <h3>song</h3>
+                        <p>234</p>
+                    </div>
+                    <div>
+                        <h3>follower</h3>
+                        <p>234</p>
+                    </div>
+                    <div>
+                        <h3>following</h3>
+                        <p>234</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Src" style="display: none;">
+                <div class="blur"></div>
+                <div class="src-hd">
+                    <form>
+                        <input type="search" placeholder="Search">
+                        <button class="ic_hf"></button>
+                    </form>
+                    <div class="srcIND sgMD">
+                        <button class="sng">songs</button><button class="usr">users</button>
+                    </div>
+                    <div class="sngbd">
+                        <div><a href=""><img src="files/mpCV/1.jpg">
+                                <h3>uyameyateniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteni</h3>
+                                <p>teniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteni</p>
+                            </a></div>
+                        <div><a href=""><img src="files/mpCV/1.jpg">
+                                <h3>uyameyateniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteni</h3>
+                                <p>teniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteniteni</p>
+                            </a></div>
+                        <div class="src_ld"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bd_lf" style="display: none;" id="LeftPg">
+                <div>
+                    <a class="ic_hf" href="#">NEW</a>
+                    <a class="ic_hf" href="#">FEATURED</a>
+                    <a class="ic_hf" href="#">90's</a>
+                    <a class="ic_hf" href="#">TOPS</a>
+                    <a class="ic_hf" href="#">IBILE</a>
+                </div>
+                <div>
+                    <a id="op-sign" class="ic_hf">sign in &amp; sign up</a>
+                    <a id="op-up_sg" class="ic_hf sg_up">Upload</a>
+                </div>
+                <div>
+                    <a>contact us</a>
+                    <a>about us</a>
+                    <a>2019 &copy; </a>
+                </div>
+            </div>
+            <div id="mp_FM" class="fm_ply" style="display: none;">
+                <div class="fm_ply_bd">
+                    <ul class="bnd">
+                        <li class="sg-art"><img src="files/mpCV/1.jpg"></li>
+                        <li class="sg-nam">
+                            <h3>song name</h3>
+                            <p>artist name</p><a href="#" class="sg-upl"><img src="files/mpCV/1.jpg">
+                                <h4>samuel</h4>
+                            </a>
+                        </li>
+                        <li class="sg-attr"><button>
+                                <div class="ic_hf lk"></div>
+                                <h4>1,200 <small>likes</small></h4>
+                            </button><button>
+                                <div class="ic_hf dk"></div>
+                                <h4>1,200 <small>dislikes</small></h4>
+                            </button><button>
+                                <div class="ic_hf sn"></div>
+                                <h4>1,200 <small>seen</small></h4>
+                            </button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mp_HM" class="bd_md" style="display: non;">
+                <div class="s3-box">
+                    <h1>new</h1>
+                    <div class="box_flex nw">
+                        <div class="box">
+                            <img src="files/mpCV/1.jpg">
+                            <div class="mp_lk">
+                                <br>
+                                <br>
+                                <h3>artist name</h3>
+                                <p>song name</p>
+                                <div>
+                                    <button class="ic_hf lk">234</button>
+                                    <button class="ic_hf cm">345</button>
+                                    <button class="ic_hf se">567</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="files/mpCV/2.jpg">
+                            <div class="mp_lk">
+                                <br>
+                                <br>
+                                <h3>artist name</h3>
+                                <p>song name</p>
+                                <div>
+                                    <button class="ic_hf lk">234</button>
+                                    <button class="ic_hf cm">345</button>
+                                    <button class="ic_hf se">567</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="files/mpCV/5.jpg">
+                            <div class="mp_lk">
+                                <br>
+                                <br>
+                                <h3>artist name</h3>
+                                <p>song name</p>
+                                <div>
+                                    <button class="ic_hf lk">234</button>
+                                    <button class="ic_hf cm">345</button>
+                                    <button class="ic_hf se">567</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mre">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <div class="s6_box">
+                    <h1>genres</h1>
+                    <div class="box_flex">
+                        <div class="box">
+                            <img src="files/mpCV/1.jpg">
+                            <div class="mp_lk">
+                                <h3>artist name</h3>
+                                <p>song name</p>
+                                <div>
+                                    <button class="ic_hf lk">234</button>
+                                    <button class="ic_hf cm">345</button>
+                                    <button class="ic_hf se">567</button>
+                                </div>
+
+                            </div>
+                            <div class="mp_PD">
+                                <button class="ic_hf pl">play</button>
+                                <button class="ic_hf dw">download</button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="files/mpCV/2.jpg">
+                            <div class="mp_lk">
+                                <h3>artist name</h3>
+                                <p>song name</p>
+                                <div>
+                                    <button class="ic_hf lk">234</button>
+                                    <button class="ic_hf cm">345</button>
+                                    <button class="ic_hf se">567</button>
+                                </div>
+                            </div>
+                            <div class="mp_PD">
+                                <button class="ic_hf pl">play</button>
+                                <button class="ic_hf dw">download</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="pop_box" class="pop_mdr" style="display: none;">
+                <!--<div class="mid-box">
+                    <div class="sn-HD">
+                        <div>
+                            <button class="ic_hf" id="cls-spn"></button>
+                            <h1>welcome To GBEDU</h1>
+                            <p>Your free portal to unlimited music</p>
+                             <form class="ld mid" enctype="multipart/form-data" id="us_data" autocomplete="off" method="post">
+                                 
+                               <h2>sign in to your account</h2>
+                                <ul>
+                                    <li><input type="email" class="input iconS" required title="Enter a valid email" onblur="chInput(this,'fe');" onclick="dinp(this,'f3');">
+                                        <p class="pl">Email</p><span></span>
+                                    </li>
+                                    <li><input type="password" class="input iconS" required title="Enter a valid password" onclick="dinp(this,'f4')" onblur="chInput(this,'fp')">
+                                        <p class="pl">Password</p><span></span>
+                                    </li>
+                                </ul>
+                                <button>sign in</button><br>
+                                <a href="">forgotten password ?</a> </form>-->
+
+
+                <!--fm1
+                               <ul>
+                                <li><input class="input iconS" type="text" id="fname" name="fname" maxlength="50" onclick="dinp(this,'f1')" onblur="chInput(this,'ft')" required title="Enter text only"/><p class="pl">firstname</p><span></span></li>
+                                <li><input type="text" class="input iconS" name="sname" onclick="dinp(this,'f2')" onblur="chInput(this,'ft')" required title="Enter text only"/><p class="pl">lastname</p><span></span></li>
+                                <li><input type="email" class="input iconS" required title="Enter a valid email" onblur="chInput(this,'fe');" onclick="dinp(this,'f3');"><p class="pl">Email</p><span></span></li></ul>
+                               <button name="smb_SP1" id="fm_sub">next</button>
+                               -->
+                <!--fm2
+                                  <ul> 
+                                   <li><input type="password" class="input iconS " id="fp1" name="sname" onclick="dinp(this,'f4')" onblur="chInput(this,'fp');" required title="Enter text only"/><p class="pl" id="fp1r">password</p><span></span><div class="shp" title="click to show password" onclick="shp('p1')"></div></li>
+                                   <li><input class="input iconS " type="password" id="fp2" name="fname" maxlength="50" onclick="dinp(this,'f4')" onblur="chInput(this,'cbp');" required title="Enter text only"/><p class="pl" id="fp2r">password</p><span></span><div class="shp" title="click to show password" onclick="shp('p2')"></div></li> </ul>
+                                <button name="smb_SP1" id="fm_sub">next</button><button name="smb_SP1" id="prv">prev</button>
+                                -->
+                <!--fm3
+                                 <ul>
+                                  <li><input type="number" min="01"  max="31" class="input iconS" name="sname" onclick="dinp(this,'dd')" onblur="chInput(this,'fn','DD')" required title="Enter text only"/><p class="pl">DD</p><span></span></li> 
+                                  <li><input class="input iconS" min="01" max="12" type="number" id="fname" name="fname" onclick="dinp(this,'mm')" onblur="chInput(this,'fn','MM')" title="Enter text only" required/><p class="pl">MM</p><span></span></li>
+                                  <li><input class="input iconS" min="1920" max="2019" type="number" id="fname" name="fname" onclick="dinp(this,'yy')" onblur="chInput(this,'fn','YY')" required title="Enter text only"/><p class="pl">YYYY</p><span></span></li>
+                               </ul>
+                               <div id="prv">prev</div><button>next</button>-->
+                <!--fm4
+                              <h2 class="suc">Congratulation<br>You have successfully <br>Sign Up</h2><p>Check your email and enter verification code below</p>
+                               <ul>
+                                   <li><input type="text" class="input iconS vcode" id="fp1" name="sname" onclick="dinp(this,'f5')" onblur="chInput(this,'vc');" required title="Enter text only"/><p class="pl" id="fp1r">verification code</p><span></span></li>
+                                   <li class="prcd"><button>continue</button></li>
+                                   <li class="rnvc"><div>request new code</div></li>
+                               </ul> -->
+
+                <!--fm5  
+                               <h2 style="text-align: center;">welcome user12345</h2>
+                               <div><div id="sh_img"><button style="display: none;" id="sh_img">upload profile photo</button><img src="files/mpCV/2.jpg"><input type="file" id="up_usPH" onchange="shusrPH(this);" accept="image/*">
+                               </div></div><button>continue</button><br><div class="skp" id="prv">skip</div>
+                                -->
+                <!--fm6
+                              <h2 style="text-align: center;">successfully registered<br>user12345</h2>
+                              <div><img src="files/mpCV/2.jpg"></div>
+                              <div id="prv">done</div> 
+                             -->
+
+                <!--</form>
+                            <button id="swt_SN" onclick="swtSPSN(this)">sign in</button>-->
+                <!-- ld body <div class="hd_inp"></div>-->
+                <!--prc form cls
+                            <div class="pre_cl">
+                                <ul>
+                                    <li>
+                                        <h3>Are you sure you want to cancel all your previous action ?</h3>
+                                    </li>
+                                    <li><button id="cle_LGSN" form="ghost">Yes</button><button id="rtn_LGSN" form="ghost">No</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!--<div class="gen">
+                    <ul>
+                        <li>
+                            <h1>Sorry you are not logged in yet</h1>
+                        </li>
+                        <li class="bu"><button id="sn" class="sn">sign in</button></li>
+                        <li class="bu"><button id="sp" class="sp">sign up</button></li>
+                    </ul>
+                    <button id="clc_pop" class="ic_hf"></button>
+                </div>-->
+                <!--<form class="gen">
+                    <ul>
+                        <li>
+                            <h1>Are you sure you want to signout ?</h1>
+                        </li>
+                        <li class="bu"><button id="sn" class="sn">YES</button></li>
+                    </ul>
+                    <div id="clc_pop" class="ic_hf cButton"></div>
+                </form>-->
+                <!--<div class="gen">
+                    <ul>
+                        <li>
+                            <h1><br><br><br>Coming Soon</h1>
+                        </li>
+                        
+                    </ul>
+                    <button id="clc_pop" class="ic_hf"></button>
+                </div>-->
+                <!-- <div class="gen">
+                    <ul>
+                        <li>
+                            <h1><br><br><br>Please wait<br>loading...</h1>
+                        </li>
+                    </ul>
+                <button id="clc_pop" class="ic_hf"></button>
+                <div id="lding" class="hd_inp" style="display:non;">
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="p-bm">
+        <div class="bmTop">
+            <div class="bmTin" id="audBox">
+                <h3 id="audPlayed">00:00</h3>
+                <div class="Lded_bd" id="player" onMouseEnter="getClickPosition(this, playClick);">
+                   <div class="play_Range">
+                       <div  id="audBuff" class="buff"></div>
+                       <button id="audPlay2" value="10" class="played"></button>
+                       <button id="rgVal" class="playCtrl"></button>
+                   </div>
+                </div>
+                <h3 id="audLength" class="h3r">00:00</h3>
+                <audio>
+                    <source src="files/mp3/all/Davio.mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="bmLeft">
+            <div class="f1"><img src="files/mpCV/2.jpg"></div>
+            <div class="f2">
+                <h3>helohkhkhkkhkhrrrrrrrrrrrrrrrr</h3>
+                <p>hellohhhhhhhhhh</p>
+            </div>
+        </div>
+        <div class="bmMiddle">
+            <div class="ctrlBd">
+                <button class="cSuffle" title="suffle"></button>
+                <button class="cPrev" title="prev"></button>
+                <button id="audPlay" value="play" class="cPlay cplayLoad" title="play"></button>
+                <button class="cNext" title="next"></button>
+                <button class="cRepeat" title="repeat"></button>
+            </div>
+        </div>
+        <div class="bmRight">
+            <div class="ctrlBd">
+                <div id="volBody" class="vWrap"><button id="opVol" value="close" onclick="open_Vol();" title="volume open" class="ic_hf"></button>
+                    <div class="volBd">
+                       <div id="volume" class="voLength" onMouseEnter="getClickPosition(this, volPer);">
+                         <div class="vol_range">
+                             <div></div>
+                             <button id="audVol" value="0.5" class="volumed"></button>
+                             <button class="ctrlVol"><p>50</p></button>
+                         </div>
+                       </div>
+                    </div>
+                </div>
+                <button class="ic_hf" id="opFM" onclick="openFM();" value="open" title="go Full mode"></button>
+                <button id="clFM" onclick="clFM();" title="close Full mode"></button>
+            </div>
+        </div>
+    </div>
+    <h1 id="show" style="position: absolute; bottom: 0.5em; z-index: 1;color: white;right: 1em;"></h1>
+    <!--<div class="p-err">
+        <div>
+            <div class="logo"><h1>[ GBE-DU ]</h1></div>
+            <ul>
+                <li><h3>Browser not surpported</h3><h4>Upgrade to the latest version</h4></li>
+                <li class="lk"><a href="$">google chrome<img src="img/pg/chrome.png"></a></li>
+                <li class="lk"><a href="$">opera<img src="img/pg/chrome.png"></a></li>
+                <li class="lk"><a href="$">internet explorer<img src="img/pg/chrome.png"></a></li>
+                <li class="lk"><a href="$">uc<img src="img/pg/chrome.png"></a></li>
+                <li class="lk"><a href="$">mozila firefox<img src="img/pg/chrome.png"></a></li>
+                <li>Or click</li>
+                <li class="bu"><a href="$">continue</a></li>
+                <li>To proceed to older browser version some features are not supported</li>
+            </ul>
+        </div>
+    </div>-->
+</body></html>

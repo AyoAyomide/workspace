@@ -1,0 +1,426 @@
+/*<--BOD+MN-->*/
+.p-bm {
+    z-index: 1;
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #6f6f6f;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.9);
+    text-align: center
+}
+
+.p-bm > .bmTop {
+    width: 100%;
+    margin: auto;
+    padding-left: 5em;
+}
+
+.p-bm > .bmTop > .bmTin {
+    position: relative;
+    width: 100%;
+    height:18px;;
+    padding-left: 3.5em;
+    padding-right: 3em;
+}
+
+.p-bm > .bmTop > .bmTin > h3 {
+    float: left;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-left: 3px;
+    color:#272727;
+}
+
+.p-bm > .bmTop > .bmTin > .h3r {
+    margin-left: 0px;
+    margin-right: 4px;
+    left: auto;
+    right: 0px;
+}
+
+.bmTop > .bmTin > .Lded_bd {
+    width: 100%;
+    height:100%;
+    display: inline-block;
+    
+}
+.bmTop > .bmTin > .Lded_bd>.play_Range{
+    height:5px;
+    margin-top:5px; 
+    background-color:#e0e0d1;
+    position: relative;
+    cursor: pointer;
+}
+.bmTop > .bmTin > .Lded_bd:hover>.play_Range{
+    height:7px;
+}
+.bmTop > .bmTin > .Lded_bd>.play_Range > .buff {
+    width: 0%;
+    height: 100%;
+    background-color: #abd4ed;
+    position: absolute; 
+}
+
+.bmTop > .bmTin > .Lded_bd >.play_Range > .played{
+    width:0%;
+    height: 100%;
+    background-color: #4491ca;
+    float: left;
+    position: relative;
+    border: none;
+}
+.bmTop > .bmTin > .Lded_bd >.play_Range >.playCtrl {
+    height: 18px;
+    width: 18px;
+    float: left;
+    border-radius: 1em;
+    margin-top: -5px;
+    margin-left: -13px;
+    position: relative;
+    border-width: 2px;
+    border-color: #2475a8;
+    background-color: #2d93d2;
+    display: none;
+}
+.bmTop > .bmTin > .Lded_bd:hover >.play_Range>.playCtrl{
+    display: inline-block;
+    animation-name: drop;
+    animation-duration:0.1s; 
+}
+/*--all bottom--*/
+.p-bm > .bmLeft,
+.p-bm > .bmMiddle,
+.p-bm > .bmRight {
+    width: 32%;
+    display: inline-block;
+    height: 50px;
+}
+/*--left bottom--*/
+.p-bm > .bmLeft {
+    width: 25%;
+}
+
+.p-bm > .bmLeft > .f1 {
+    height: 4.3em;
+    width: 4em;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+}
+
+.p-bm > .bmLeft > div > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-bm > .bmLeft > .f2 {
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left:4em; 
+}
+
+.p-bm > .bmLeft > .f2 > h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #272727;
+}
+
+.p-bm > .bmLeft > .f2 > p {
+    color:#1a1719;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*--middle bottom--*/
+.p-bm > .bmMiddle {
+    width: 45%;
+}
+
+.p-bm > .bmMiddle > .ctrlBd,
+.p-bm > .bmRight > .ctrlBd {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 3px 0px 0px 0px;
+}
+
+.p-bm > .bmMiddle > .ctrlBd > button {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    background-image: url(../../img/icon/ic_hf.png);
+    border-width:10px 5px 10px 5px;
+    background-repeat: no-repeat;
+    border-color: #6f6f6f;
+    vertical-align: middle;
+}
+
+.p-bm > .bmMiddle > .ctrlBd > .cSuffle {
+    display: none;
+    background-position:0px -378px; 
+}
+
+.p-bm > .bmMiddle > .ctrlBd > .cRepeat {
+    display: none;
+    background-position:0px -353px; 
+}
+
+.p-bm > .bmMiddle > .ctrlBd > .cPlay {
+    margin: 0px 4px;
+    border-color:white;
+    border-width:2px; 
+    background-image: url(../../img/icon/ic_hf2.png);
+    background-position:5.5px -1.5px;
+    border-radius:3em; 
+    border-color: #e2e3e5 #343233 #e2e3e5 #e2e3e5;
+}
+.p-bm > .bmMiddle > .ctrlBd > .cplayLoad{
+    animation-name:on-off;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    box-shadow:inset 0 0 10px rgba(226,227,229,0.5),0 0 10px rgba(0,0,0,0.5);
+}
+.p-bm > .bmMiddle > .ctrlBd > .cPrev{
+    background-position:0px -251px; 
+}
+.p-bm > .bmMiddle > .ctrlBd > .cNext{
+    background-position:0px -301px;
+}
+/*--right bottom--*/
+.p-bm > .bmRight {
+    width: 25%;
+}
+
+.p-bm > .bmRight > .ctrlBd {
+    padding: 8px 0px 0px 0px;
+}
+
+.p-bm > .bmRight > .ctrlBd > button {
+    height: 30px;
+    width: 30px;
+    background-position:-1px -448px;
+    border-color: transparent;
+}
+.p-bm > .bmRight > .ctrlBd > #clFM{
+    display: none;
+}
+.p-bm > .bmRight > .ctrlBd > .vWrap {
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.p-bm > .bmRight > .ctrlBd > .vWrap > button {
+    height: 30px;
+    width: 30px;
+    float: left;
+    border-color: transparent;
+    background-position:-1px -398px;
+}
+
+.p-bm > .bmRight > .ctrlBd > .vWrap > .volBd {
+    width: 7em;
+    height: 100%;
+    float: left;
+    padding: 0px 5px 0px 13px;
+    background-color:#615b5b;
+    margin-top: -3.5em;
+    margin-left: -55px;
+    position: absolute;
+    display:none; 
+    animation-name:drpB;
+    animation-duration:0.5s; 
+}
+
+.p-bm > .bmRight > .ctrlBd > .vWrap > .volBd > .voLength {
+        height:100%;
+        width: 100%;
+        float: left;
+    padding:10px 0px; 
+}
+.vWrap > .volBd > .voLength >.vol_range{
+    height: 5px;
+    width: 100%;
+    background-color:lightgray;
+    cursor: pointer;
+}
+.vWrap > .volBd > .voLength >.vol_range > .volumed {
+    width: 60%;
+        height: 100%;
+        float: left;
+        background-color: #3ca2ec;
+        position: relative;
+    border: none;
+}
+
+.vWrap > .volBd > .voLength >.vol_range > .ctrlVol {
+    float: left;
+        left: 0px;
+        height: 15px;
+        width: 15px;
+        margin-top: -4px;
+        margin-left: -15px;
+        border-radius: 1em;
+        position: relative;
+    border-color:#1f6da5;
+    background-color: #3ca2ec;
+}
+
+.vWrap > .volBd > .voLength >.vol_range > .ctrlVol > p {
+    margin-right: 0px;
+        margin-top: -35px;
+        margin-left: -5px;
+        width: 2em;
+        padding: 2px;
+        background-color: #615b5b;
+        color: #dbdbdb;
+        font-size: 14px;
+    font-weight: 600;
+    display:none;
+}
+.vWrap > .volBd > .voLength:hover >.vol_range > .ctrlVol > p{
+    display:block;
+    animation-name: drop;
+    animation-duration:0.05s; 
+}
+@media (min-width:16em) and (max-width:25em) {
+    .p-bm {
+        background-color: green;
+    }
+    .p-bm > .bmLeft{
+        width: auto;
+    }
+     .p-bm > .bmLeft > .f1 {
+        display: inline-block;
+    }
+
+    .p-bm > .bmLeft > .f2 {
+        display: none;
+    }
+}
+
+/*#tablet */
+@media (min-width:33em) and (max-width:65em) {
+    .p-bm > .bmMiddle > .ctrlBd > .cSuffle {
+        display: inline-block;
+    }
+
+    .p-bm > .bmMiddle > .ctrlBd > .cRepeat {
+        display: inline-block;
+    }
+    
+}
+
+/*#desktop*/
+@media (min-width:65em) {
+    .p-bm > .bmTop {
+        width: 50%;
+        padding-left: 0em;
+    }
+
+    .p-bm > .bmLeft {
+        float: left;
+        margin-top: -18px;
+        height: 100%;
+    }
+
+    .p-bm > .bmLeft > .f1 {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+    }
+
+    .p-bm > .bmLeft > .f2 {
+        width: calc(100% - 5em);
+        padding-left:0.5em; 
+    }
+
+    .p-bm > .bmMiddle > .ctrlBd > button {
+        margin: 0px 2%;
+    }
+
+    .p-bm > .bmMiddle > .ctrlBd > .cSuffle {
+        display: inline-block;
+    }
+
+    .p-bm > .bmMiddle > .ctrlBd > .cRepeat {
+        display: inline-block;
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap {
+        height: 30px;
+        display: inline-block;
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap > button {
+        height: 30px;
+        width: 30px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap > .volBd {
+        background-color:transparent;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+/*
+    .p-bm > .bmRight > .ctrlBd > .vWrap > .volBd > .voLength {
+        height: 5px;
+        width: 100%;
+        background-color: aliceblue;
+        border-radius: 1em;
+        float: left;
+
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap > .volBd > .voLength > .volumed {
+        width: 40%;
+        height: 100%;
+        border-radius: 1em;
+        float: left;
+        background-color: green;
+        position: relative;
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap > .volBd > .voLength > .ctrlVol {
+        float: left;
+        left: 0px;
+        height: 15px;
+        width: 15px;
+        margin-top: -4px;
+        margin-left: -15px;
+        border-radius: 1em;
+        position: relative;
+    }
+
+    .p-bm > .bmRight > .ctrlBd > .vWrap > .volBd > .voLength > .ctrlVol > p {
+        margin-right: 0px;
+        margin-top: -35px;
+        margin-left: -5px;
+        width: 2em;
+        padding: 2px;
+        background-color: brown;
+        color: white;
+        font-size: 14px;
+        float: none;
+    }*/
+}

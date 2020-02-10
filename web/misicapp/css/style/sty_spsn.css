@@ -1,0 +1,470 @@
+/*<--SN+UP/IN-->*/
+.pop_mdr > .mid-box {
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    margin: auto;
+}
+.pop_mdr > .mid-box > .sn-HD{
+    
+    
+}
+.pop_mdr > .mid-box > .sn-HD > div {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border-radius: 3px;
+    background-color: #20282c;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    animation-name: drop;
+    animation-duration: 0.4s;
+    padding-bottom: 40px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > h1 {
+    text-transform: capitalize;
+    color: #43d7ff;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > p {
+    font-size: 16px;
+    color: #98adba;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form {
+    width: 100%;
+    padding: 20px 3em;
+    min-height: 10em;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > .mid {
+    margin-top: 2em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > .ld {
+    position: relative;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > h2 {
+    text-align: left;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #1ea9cc;
+    text-transform: capitalize;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > .suc {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > .su_B {
+    width: 3em;
+    height: 3em;
+    box-sizing: content-box;
+    padding: 2px;
+    background-color: transparent;
+    border: 4px solid green;
+    background-position: 8px -94px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > .rnvc {
+    display: inline-block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > button {
+    padding: 5px 10px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #297fb8;
+    border: 1px solid #297fb8;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > .prcd > button {
+    background-color: #3497db;
+    border-color: #3497db;
+    color: #003b60;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > .rnvc > div {
+    position: static;
+    height: auto;
+    width: auto;
+    float: left;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: #297fb8;
+    border: 1px solid #297fb8;
+    font-size: 15px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li {
+    border: 1px solid transparent;
+    position: relative;
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > div {
+    height: 9em;
+    text-align: center;
+    padding: 0 3.5em;
+    margin: 15px 0;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > div > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > div > div > button {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: azure;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 3px solid grey;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > div > img,.pop_mdr > .mid-box > .sn-HD > div > form > div > div> img {
+    max-height: 100%;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > div > div > input {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: #ebf1f1;
+    border-bottom: 2px solid #3c4448;
+}
+
+.sn-HD > div > form > ul > li > input[type="email"] {
+    background-position: right -3.9em;
+}
+
+.sn-HD > div > form > ul > li > input[type="text"] {
+    background-position: right 0em;
+}
+
+.sn-HD > div > form > ul > li > input[type="password"] {
+    background-position: right -7.6em;
+}
+
+.sn-HD > div > form > ul > li > input[type="number"] {
+    background-position: right -11.5em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > .shp {
+    background-position: right -18.9em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > .shp1 {
+    background-position: right -17em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > .vcode {
+    background-position: right -7.8em;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input:focus ~ p,
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input:valid ~ p,
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > .act ~ p {
+    top: -12px;
+    font-size: 13px;
+    animation-name: drpB;
+    animation-duration: 0.3s;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input::-webkit-input-placeholder {
+    text-align: left;
+    color: #d64333;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input:-ms-input-placeholder {
+    text-align: left;
+    color: #d64333;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input:-moz-placeholder {
+    opacity: 1;
+    text-align: left;
+    color: #d64333;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input::-moz-placeholder {
+    opacity: 1;
+    text-align: left;
+    color: #d64333;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > p {
+    pointer-events: none;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    color: #2699ca;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > span {
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > div {
+    background-color: transparent;
+    height: 100%;
+    position: absolute;
+    width: 25px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > ul > li > input:focus ~ span {
+    opacity: 1;
+    background-color: #03a9f4;
+    width: 0%;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > button,
+.pop_mdr > .mid-box > .sn-HD > div > form > #prv {
+    padding: 5px 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 2px;
+    border-color: transparent;
+    background-color: #0791cc;
+    color: #20282c;
+    margin: 0 5px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > #prv {
+    background-color: #3f4a4e;
+    color: #9da8ac;
+    display: inline-block;
+    cursor: pointer;
+    height: auto;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > #prv:hover {
+    background-color: #4e5b60;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > button:hover {
+    background-color: #159fda;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > .skp {
+    float: right;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > form > a {
+    display: inline-block;
+    float: left;
+    color: #7f8d8e;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > button {
+    padding: 7px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 2px;
+    border-color: transparent;
+    background-color: #d6c520;
+    color: #20282c;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+}
+.pop_mdr > .mid-box > .sn-HD > div > #cls-spn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-color: transparent;
+    background-position: -4.1px -501px;
+    background-color: transparent;
+}
+.pop_mdr .hd_inp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../../img/gif/ld.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3em;
+    border-radius: 2px;
+}
+.pop_mdr > .mid-box > .sn-HD > div > .pre_cl {
+    height: 100%;
+    width: 100%;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > .pre_cl > ul {
+    display: inline-block;
+    height: auto;
+    margin: auto;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > .pre_cl > ul > li {
+    margin: 10px;
+}
+
+.pop_mdr > .mid-box > .sn-HD > div > .pre_cl > ul > li > button {
+    padding: 5px;
+    font-size: 15px;
+    width: 60%;
+    margin:5px; 
+    border-radius: 5em;
+    font-weight: 600;
+    background-color: transparent;
+}
+#cle_LGSN{
+    border: 2px solid #28ac60;
+    color: #28ac60;
+}
+#cle_LGSN:hover{
+    background-color: #28ac60;
+    color: #dedfe1;
+}
+#rtn_LGSN{
+    border: 2px solid #297fb8;
+    color: #297fb8;
+}
+#rtn_LGSN:hover{
+    background-color: #297fb8;
+    color: #dedfe1;
+}
+/*
+  #hd screen desktop
+*/
+@media only screen and (max-height:40em) {
+   .pop_mdr > .mid-box > .sn-HD > div > form {
+    padding: 10px 10px;
+    }
+    .pop_mdr > .mid-box > .sn-HD > div > h1{font-size:1.6em; }
+    .pop_mdr > .mid-box > .sn-HD > div > .mid{
+        margin-top: 5px;
+    }
+    .pop_mdr > .mid-box > .sn-HD > div > form > h2{font-size: 1.3em;}
+}
+/*
+  #hd screen desktop
+*/
+@media (min-width:80.1em){
+    
+}
+/*
+  #normal screen desktop
+*/
+@media (min-width:65em) and (max-width:80em){
+    
+}
+/*
+  #tablet,ipad (portrait)
+*/
+@media (min-width:48em) and (max-width:65em){
+    .pop_mdr > .mid-box > .sn-HD{
+        width:46em;
+        margin: auto;
+    }
+}
+/*
+  #tablet,ipad (landsacpe)
+*/
+@media (min-width:48em) and (max-width:65em) and (orientation:landscape){
+    .pop_mdr > .mid-box > .sn-HD{
+        width:46em;
+        margin: auto;
+    }
+}
+/*
+  #low tablet,mobile (landscape)
+*/
+@media (max-width:80em) and (max-height:40em){
+    .pop_mdr > .mid-box > .sn-HD{
+        width:35em;
+        margin: auto;
+    }
+}
+/*
+  #mobile (portrait)
+*/
+@media (min-width:16em) and (max-width:30em){
+    .pop_mdr > .mid-box{width:100%;}
+    .pop_mdr > .mid-box > .sn-HD{
+        width: 95%;
+        margin: auto;
+    }
+    .pop_mdr > .mid-box > .sn-HD > div > .pre_cl > ul > li > button {
+        width: 80%;
+    }
+    .pop_mdr > .mid-box > .sn-HD > div > form {
+    padding: 10px 10px;
+    }
+}

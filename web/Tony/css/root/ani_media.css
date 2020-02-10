@@ -1,0 +1,188 @@
+/*<--ALL-INDEX-->*/
+@media only screen and (max-width:60em) {
+    body{padding-top:6em;}
+    .p-hd > ul{
+        display:inline-block;
+        width:100%;
+    }
+    .p-hd > ul >li{
+        width:100%;
+    }  
+    .p-hd > ul >.logo{
+        width:100%;
+    }
+    .p-hd > ul > .logo > button {
+        display:block;
+        border:none;
+        padding:10px;
+        width:3em;
+        margin:5px;
+        background-position: -3px -122px;
+    }
+    .p-hd > ul > .logo > button > p {
+        color: white;
+        background-color: red;
+        margin: -13px -10px 0px;
+        border-radius: 1em;
+        width:auto;
+        float:right;
+        height:auto;
+        padding:2px 5px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .p-hd > ul > .link > ul > li:nth-child(4){display:none;}
+    .section {
+        margin: auto;
+        width: 100%;
+        display: inherit;
+        text-align: center;
+    }
+    .section > div {
+        float: none;
+        display: inline-block;
+        margin: 2vw;
+        width: 17em;
+    }
+    .section > div > a > img {
+        width: 100%;
+        height: 100%
+    }
+    .slide2 {
+        width: 100%;
+        padding: 0 2em;
+         display: flex;
+    }
+    .slide2 > img {
+        width: 40%;
+        height: 100%;
+    }
+    .slide2 > div {
+        padding: 10px;
+        margin: auto;
+    }
+    .footer > ul {
+        width: 100%;
+    }
+    /*<----STYLE-F-VWMD---->*/
+    .hm-dwn{border-width:5vw 48vw;}
+    .hm-post{width:100%;}
+}
+@media only screen and (max-width:40em) {
+    .section > div{
+        width:45%;
+    }
+     .view > .img{
+        width:100%;
+    }
+    .view > .V-list{
+        width:100%;
+    }
+    .hm-post>span{
+        margin:0;
+        width:70%;
+    }
+}
+@media only screen and (max-width:30em) {
+    .section > div {
+        margin: 5px 0;
+        width: 95%;
+        height: 100%;
+        border-radius: 2px;
+    }
+
+    .slide {
+        padding: 1em;
+        margin-top: 4.5em;
+    }
+
+    .slide2 {
+        padding: 3px;
+        display: block;
+    }
+
+    .slide2 > img {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+    
+    .slide2 > div {
+        padding: 10px;
+        margin: auto;
+        float: none;
+    }
+
+    .section > div > a > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .hm-dwn{border-width:5vw 47.8vw;}
+
+    .section > div > .span {
+        position: relative;
+        border-radius: 2px;
+    }
+
+    .section > div > .span > button {
+        padding: 10px;
+    }
+
+    .footer > ul {
+        display: inline-block;
+    }
+
+    .footer > ul > .logo {
+        margin: 0;
+        width: 100%;
+        height: 2em;
+        background: transparent;
+    }
+
+    .footer > ul > .logo > p {
+        width: auto;
+        float: left;
+    }
+
+    .footer > ul > li {
+        margin-left: 1vw;
+        float: left;
+        width: auto;
+    }
+}
+/*<--ANI-->*/
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.09);
+        transition: transform 5s;
+    }
+}
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes blur {
+    from{opacity:0.2;}
+    to{opacity:1;}
+}
+@keyframes drop{
+    from{transform:scale(0);}
+    to{transform:scale(1);}}
+@keyframes water{
+    from{height:0;}
+    to{height:calc(5vw + 100%);}
+}
+@keyframes chng{
+    from{color:transparent;}
+    to{color:#ebf1f1;}
+}

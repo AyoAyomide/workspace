@@ -1,0 +1,104 @@
+body {
+    background-color: #e9e8e6;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 100%;
+
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button {
+    cursor: pointer;
+}
+button,
+input {
+    box-shadow: none;
+    font-family: sans-serif;
+    border: 1px solid black;
+    outline: none;
+}
+input[type=number]{-moz-appearance: textfield;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+input:focus,
+input:hover[type=number]::-webkit-inner-spin-button,
+input:focus,
+input:hover[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    margin: 0;
+}
+ul,
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+/*<----class---->*/
+.p-hd {
+    position: fixed;
+    color: #f1f1f1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #2e2e2e;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+.icon {
+    background-color: transparent;
+    background-image: url(../../img/icon/ay.png);
+    background-repeat: no-repeat;
+}
+.icons {
+    background-color: transparent;
+    background-image: url(../../img/icon/ays.png);
+    background-repeat: no-repeat;
+}
+.iconS {
+    background-color: transparent;
+    background-image: url(../../img/icon/S.png);
+    background-repeat: no-repeat;
+}
+.ic_hf {
+    background-color: transparent;
+    background-image: url(../../img/icon/ic_hf.png);
+    background-repeat: no-repeat;
+}
+.ic_hf2 {
+    background-color: transparent;
+    background-image: url(../../img/icon/ic_hf2.png);
+    background-repeat: no-repeat;
+}
+/*--col--*/
+.sh-hd-1{background-color:#3e3f40;}
+.sh-hd-2{background-color:#62d1b8;}
+.sh-hd-3{background-color:#6dbcdb;}
+.sh-hd-4{background-color:#a5b7bd;}

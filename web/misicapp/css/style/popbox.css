@@ -1,0 +1,97 @@
+.pop_mdr {
+    position: fixed;
+    overflow-x: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 1);
+    padding-top: 55px;
+    padding-bottom:10px; 
+    display: flex;
+}
+.sg-mdn>.bd>.pop_mdr{
+    padding-bottom: 85px;
+}
+.pop_mdr > .gen {
+    position: relative;
+    width: 25em;
+    height: 20em;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    margin: auto;
+    background-color: #0d1721;
+    animation-name: drop;
+    animation-duration: 0.4s;
+}
+
+.pop_mdr > .gen > ul {
+    color: white;
+}
+
+.pop_mdr > .gen > ul > li {
+    padding: 10px;
+}
+
+.pop_mdr > .gen > ul > li > h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.pop_mdr > .gen > ul > .bu {
+    padding: 10px 4em;
+}
+
+.pop_mdr > .gen > ul > .bu > button {
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5em;
+    font-weight: bold;
+}
+
+.pop_mdr > .gen > ul > .bu > .sn {
+    border: 2px solid #28ac60;
+    color: #28ac60;
+}
+
+.pop_mdr > .gen > ul > .bu > .sn:hover {
+    background-color: #28ac60;
+    color: #dedfe1;
+}
+
+.pop_mdr > .gen > ul > .bu > .sp {
+    border: 2px solid #297fb8;
+    color: #297fb8;
+}
+
+.pop_mdr > .gen > ul > .bu > #sp:hover {
+    background-color: #297fb8;
+    color: #dedfe1;
+}
+
+.pop_mdr > .gen > .cButton,.pop_mdr > .gen > button {
+    cursor: pointer;
+    border: transparent;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background-position: center -499px;
+}
+
+@media only screen and (max-width:32em) {
+    .pop_mdr > .gen {
+        width: 95%;
+    }
+}
+@media only screen and (max-height:32em){
+    .pop_mdr > .gen{
+        margin-top: 0px;
+    }
+}

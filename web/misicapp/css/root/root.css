@@ -1,0 +1,215 @@
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 100%;
+	background-color: #202020;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    box-shadow: none;
+    font-family: sans-serif;
+    border: 1px solid black;
+    outline: none;
+}
+input[type=number]{-moz-appearance: textfield;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:focus,
+input:hover[type=number]::-webkit-inner-spin-button,
+input:focus,
+input:hover[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    margin: 0;
+}
+
+ul,
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*<----class---->*/
+.p-hd {
+    position: fixed;
+    color: #f1f1f1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #2e2e2e;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+.b-fullc {
+    padding-top: 45px;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.bdy{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.iconS {
+    background-color: transparent;
+    background-image: url(../../img/icon/S.png);
+    background-repeat: no-repeat;
+}
+.ic_hf {
+    background-color: transparent;
+    background-image: url(../../img/icon/ic_hf.png);
+    background-repeat: no-repeat;
+}
+.ic_hf2 {
+    background-color: transparent;
+    background-image: url(../../img/icon/ic_hf2.png);
+    background-repeat: no-repeat;
+}
+.up-pck{
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+	background-color: #5196d4;
+}
+.up-pck>input{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.up-pck>button{
+	background-color: transparent;
+	width:30px;
+	height:30px;
+	border: none;
+}
+/*<----id---->*/
+#test {
+    height: 100em;
+    border: 5px solid red;
+}
+
+#right {
+    flex: 1;
+}
+
+#ghost,
+.ghost {
+    display: none;
+}
+
+#tblock {
+    z-index: 5;
+    background-color: #333;
+    opacity: 0.1;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0;
+}
+
+/*<--CK|ON/OFF-->*/
+#on_off{
+    margin:auto;
+    position:relative;
+    height:30px;
+    width:10px;
+    display:inline-block;}
+#on_off>input{display:none;}
+#on_off>input:checked ~ #shadow{top:12px;}
+#on_off>input:checked ~ #ball{top:20px;background-color:#00ff00;}
+#on_off>input:checked ~ #bg,#on_off_hrz>input:checked ~ #bg{background-color:#23a523;}
+#on_off>span,#on_off_hrz>span{
+    border-radius:1em;
+    position:absolute;
+    transition:0.4s;}
+#on_off>#ball:hover + #shadow,
+#on_off>#ball:focus + #shadow,#on_off_hrz>#ball:hover + #shadow,
+#on_off_hrz>#ball:focus + #shadow{
+    opacity:0.4;
+    transform: scale(-1);}
+#on_off>#bg,#on_off_hrz>#bg{
+    display:inline-block;
+    height:100%;
+    width:100%;
+    top:0;
+    background-color:#c5c6c8;}
+#on_off>#shadow,#on_off_hrz>#shadow{
+    z-index:0;
+    opacity:0;
+    width:30px;
+    top:-10px;
+    height:30px;
+    background-color:#717276;
+    left:-10px;}
+#on_off>#ball,#on_off_hrz>#ball{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.5);
+    cursor:pointer;
+    z-index:2;
+    top:-2px;
+    left:-2px;
+    height:14px;
+    width:14px;
+    background-color:#4b4b4d;}
+/*<--CK|ON/OFF--Hroizontal-->*/
+#on_off_hrz{
+    width:30px;
+    height:10px;
+    position:relative;}
+#on_off_hrz>input{display:none;}
+#on_off_hrz>input:checked ~ #shadow{left:12px;}
+#on_off_hrz>input:checked ~ #ball{left:20px;background-color:#00ff00;}

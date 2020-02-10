@@ -1,0 +1,238 @@
+/*<--AUD-->*/
+@media only screen and (max-width:54em){
+    .p-hd > .logo{
+        min-width: 10.5em;
+        padding:0;
+    }
+   
+}
+@media only screen and (max-width:43em){
+	.fm-enb{
+		background-color:rgba(111,111,111,0.9);
+	}
+    
+    .lg-BD>.mid-box{
+        padding: 5px 3em;
+        margin-left:0em;
+        left:0%;
+        width: 100%;}
+    .lg-BD>.mid-box>.sn-HD>div{
+        width:25em;
+    }
+}
+@media only screen and (max-width:28em){
+    .p-hd > .fd > div>.src-hd{
+        width: 90%;
+        padding: 5px;
+    }
+    .p-hd > .fd > div>.src-hd>form,.p-hd > .fd > div>.src-hd>div{
+        width: 100%;
+    }
+   
+    .bd >.fm_ply>.fm_ply_bd>.top>.item>div{
+        min-height: auto;
+    }
+    .bd >.fm_ply>.fm_ply_bd>.top>.item>.us{
+        height: 5vh;
+    }
+    .bd >.fm_ply>.fm_ply_bd>.top>.item>.nm{min-height: 12em;}
+    .bd >.fm_ply>.fm_ply_bd>.top>.item>div>h1{
+        font-size: 7vh;
+    }
+    .fm_ply_bd>.top>.item>.ms{
+        display: flex;
+    }
+    .fm_ply_bd>.top>.item>.ms>div{
+        margin: 1em auto;
+        float: left;
+    }
+    .bd >.fm_ply>.fm_ply_bd>.hf>.item>.nm{
+        height:5em;
+        min-height: auto;
+    }
+    .bd >.fm_ply>.fm_ply_bd>.hf>.item>.us{
+        display: none;
+    }
+    .fm_ply_bd>.hf>.item>.ms>div{
+        margin-top:5px; 
+    }
+    .bd >.fm_ply>.fm_ply_bd>.cmt>.cm-box>form{
+        
+        
+    }
+    .bd >.fm_ply>.fm_ply_bd>.cmt>.cm-box>form>input{
+        
+    }
+    .bd >.fm_ply>.fm_ply_bd>.cmt>.cm-box>form>button{
+        
+    }
+}
+@media only screen and (max-width:22em){
+    .lg-BD>.mid-box>.sn-HD>div>form{
+        padding: 20px 0.5em; 
+    }
+}
+/*<--ANI-->*/
+@keyframes drop {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes drop2 {
+    from {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes flow {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flowR {
+    from {
+        opacity: 0;
+        transform: translateX(+100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flow2 {
+    from {
+        opacity: 0;
+        transform: translateX(-40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(-1.1em);
+    }
+}
+
+@keyframes flow3 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(-1.1em);
+    }
+}
+
+@keyframes blur {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes on-off{
+    from{border-color:#343233 #343233  #343233 #343233;}
+    to{border-color: #e2e3e5 #e2e3e5 #e2e3e5 #e2e3e5;}
+}
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.09);
+        transition: transform 5s;
+    }
+}
+
+@keyframes drpT {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes drpB {
+    from {
+        opacity: 0;
+        transform: translateY(+100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+  #hd screen desktop
+*/
+@media (min-width:80.1em){
+    
+}
+/*
+  #normal screen desktop
+*/
+@media (min-width:65em) and (max-width:80em){
+    
+}
+/*
+  #tablet,ipad (portrait)
+*/
+@media (min-width:48em) and (max-width:65em){
+    
+}
+/*
+  #tablet,ipad (landsacpe)
+*/
+@media (min-width:48em) and (max-width:65em) and (orientation:landscape){
+    
+}
+/*
+  #low tablet,mobile (landscape)
+*/
+@media (min-width:31em) and (max-width:48em){
+    
+}
+/*
+  #mobile (portrait)
+*/
+@media (min-width:16em) and (max-width:30em){
+    
+}
